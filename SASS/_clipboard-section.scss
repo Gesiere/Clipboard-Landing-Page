@@ -1,0 +1,48 @@
+.clipboard-section{
+    margin-top: 5rem;
+    h2{
+        font-weight: 500;
+        font-size: 1.625rem;
+        margin-bottom: 1rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+    p{
+        width: 47%;
+        margin-bottom: 4rem;
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    .buttons{
+        .cyan-btn{
+            @include buttons($strong-cyan);
+            transition: all 300ms ease-in-out;
+            @include mobile{
+                margin-bottom: 1rem;
+            }
+             @include xlarge{
+                padding: 12px 43px;
+                background-color: hsl(171, 65%, 41%);
+            }
+            &:hover{
+                   background-color: hsl(171, 50%, 40%);
+            } 
+        }
+        .blue-btn{
+            @include buttons($light-blue);
+            transition: all 300ms ease-in-out;
+              @include xlarge{
+                padding: 12px 43px;
+                margin-left: 0.5rem;
+            }
+             &:hover{
+                
+                background-color:  hsl(233, 80%, 60%);
+                }
+        }
+        
+    }
+}

@@ -1,0 +1,17 @@
+.companies-section{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+    grid-row-gap: 3em;
+    @include xlarge{
+        max-width: 80%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1em;
+        margin:  0 auto;
+    }
+
+    @include tablet{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

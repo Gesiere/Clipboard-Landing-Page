@@ -1,0 +1,43 @@
+.laptop-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem auto;
+    @include xlarge{
+        flex-direction: row;
+        margin: 4rem 0;
+        max-width: 100%;
+        text-align: left;
+        
+    }
+    .section-image{
+        img{
+            width: 100%;
+            
+        }
+    }
+    .section-items{
+        margin-top: 3rem;
+        @include xlarge{
+        margin: 0  0 4rem 5rem;
+        }
+        .section-item{
+            margin-bottom: 2rem;
+            @include xlarge{
+                width: 60%;
+            }
+            @include tablet{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h4{
+                margin-bottom: 2%;
+                font-weight: 600;
+            }
+        }
+            
+        }
+}

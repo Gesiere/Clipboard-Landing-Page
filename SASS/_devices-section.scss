@@ -1,0 +1,23 @@
+.devices-section{
+    margin: 5rem 0;
+    
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @include mobile{
+            font-size: 1.8125rem;
+        }
+    }
+    p{
+        width: 47%;
+        @include mobile{
+            width: 100%;
+        }
+    }
+    .section-image{
+        margin-top: 5rem;
+        img{
+        width: 100%;
+    }
+    }
+}

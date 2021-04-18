@@ -1,0 +1,63 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 6rem;
+    background: $grayish-blue;
+    padding: 2rem 5rem 1rem;
+    @include mobile{
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+        text-align: center;
+        
+    }
+     a{
+            color: $dark-grayish-blue;
+             line-height: 1.9;
+             transition: color 300ms ease-in-out;
+             &:hover{
+                 color: $strong-cyan;
+             }
+    }
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 1em;
+        margin-right: 2rem;
+        a{
+            
+            line-height: 2.2;
+        }
+        @include mobile{
+            flex-direction: column;
+            margin-top: 3rem;
+            margin-right: 0;
+        }
+}
+.install{
+    @include xlarge{
+                margin-left: 4rem;
+                padding-top: 1rem;
+            }
+        }
+.social-links{
+    @include mobile{
+        
+        margin-top: 2rem;
+    }
+    @include xlarge{
+        justify-self: self-end;
+    }
+    a{
+        margin-left: 1rem;
+        transition: fill 300ms ease-in-out;
+        &:hover{
+            transition:color 300ms ease-in-out ;
+              svg path{
+            fill: $strong-cyan;
+        }
+        }
+
+    }
+}
+
+}

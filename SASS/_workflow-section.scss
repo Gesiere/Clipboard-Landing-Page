@@ -1,0 +1,28 @@
+.workflow-section{
+    text-align: center;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        @include mobile{
+            font-size: 1.8125rem;
+        }
+    }
+    .section-items{
+        margin: 4rem auto;
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+
+        grid-row-gap: 3em;
+        @include mobile{
+            grid-template-columns: 1fr;
+            margin: 4rem 0;
+            max-width: 100%;
+        }
+        .section-item{
+            margin-top: 2rem;
+        }
+    }
+}
